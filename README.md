@@ -39,4 +39,4 @@ Criado classes Java baseado no modelo er escola.
 
 ![Modelo ER](erModels/escola/erEscola.png)
 
-[Projeto Escola](escola/src/escola)
+[Classes Projeto Escola](escola/src/escola)
