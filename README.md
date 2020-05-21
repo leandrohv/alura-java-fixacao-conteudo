@@ -3,7 +3,7 @@
 Formação Java e Java EE
 
 - 1/22 - Java parte 1: Primeiros passos (13, 14, 15 de Maio 2020) 8h :heavy_check_mark:
-- 2/22 - Java parte 2: Introdução à Orientação a Objetos 8h &#9745;
+- 2/22 - Java parte 2: Introdução à Orientação a Objetos 8h :heavy_check_mark:
 - 3/22 - Java parte 3: Entendendo herança e interface
 - 4/22 - Java parte 4: Entendendo exceções :pino:
 - 5/22 - Java parte 5: Pacotes e java.lang :pino:
