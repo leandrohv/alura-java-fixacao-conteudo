@@ -1,7 +1,7 @@
 package escola;
 
 public class Aluno {
-	private int id;
+	private Long id;
 	private Pessoa pessoa;
 	private String nomeMae;
 	private String nomePai;
@@ -11,7 +11,7 @@ public class Aluno {
 	private String celular;
 	private Cartorio cartorio;
 
-	public Aluno(int id, Pessoa pessoa, String nomeMae, String nomePai, String celular, Cartorio cartorio) {
+	public Aluno(Long id, Pessoa pessoa, String nomeMae, String nomePai, String celular, Cartorio cartorio) {
 		super();
 		this.id = id;
 		this.pessoa = pessoa;
@@ -21,11 +21,11 @@ public class Aluno {
 		this.cartorio = cartorio;
 	}
 
-	public int getId() {
+	public Long getId() {
 		return id;
 	}
 
-	public void setId(int id) {
+	public void setId(Long id) {
 		this.id = id;
 	}
 

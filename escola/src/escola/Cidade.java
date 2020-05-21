@@ -1,22 +1,22 @@
 package escola;
 
 public class Cidade {
-	private int id;
+	private Long id;
 	private String nome;
 	private Estado estado;
 
-	public Cidade(int id, String nome, Estado estado) {
+	public Cidade(Long id, String nome, Estado estado) {
 		super();
 		this.id = id;
 		this.nome = nome;
 		this.estado = estado;
 	}
 
-	public int getId() {
+	public Long getId() {
 		return id;
 	}
 
-	public void setId(int id) {
+	public void setId(Long id) {
 		this.id = id;
 	}
 

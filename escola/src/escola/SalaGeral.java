@@ -1,55 +1,55 @@
 package escola;
 
 public class SalaGeral {
-	private int id;
-	private Oficina idOficina;
-	private Professor idProfessor;
-	private Disciplina idDisciplina;
+	private Long id;
+	private Professor professor;
+	private Oficina oficina;
+	private Disciplina disciplina;
 
-	public SalaGeral(int id, Oficina idOficina, Professor idProfessor, Disciplina idDisciplina) {
+	public SalaGeral(Long id, Professor professor, Oficina oficina, Disciplina disciplina) {
 		super();
 		this.id = id;
-		this.idOficina = idOficina;
-		this.idProfessor = idProfessor;
-		this.idDisciplina = idDisciplina;
+		this.professor = professor;
+		this.oficina = oficina;
+		this.disciplina = disciplina;
 	}
 
-	public int getId() {
+	public Long getId() {
 		return id;
 	}
 
-	public void setId(int id) {
+	public void setId(Long id) {
 		this.id = id;
 	}
 
-	public Oficina getIdOficina() {
-		return idOficina;
+	public Oficina getOficina() {
+		return oficina;
 	}
 
-	public void setIdOficina(Oficina idOficina) {
-		this.idOficina = idOficina;
+	public void setOficina(Oficina oficina) {
+		this.oficina = oficina;
 	}
 
-	public Professor getIdProfessor() {
-		return idProfessor;
+	public Professor getProfessor() {
+		return professor;
 	}
 
-	public void setIdProfessor(Professor idProfessor) {
-		this.idProfessor = idProfessor;
+	public void setProfessor(Professor professor) {
+		this.professor = professor;
 	}
 
-	public Disciplina getIdDisciplina() {
-		return idDisciplina;
+	public Disciplina getDisciplina() {
+		return disciplina;
 	}
 
-	public void setIdDisciplina(Disciplina idDisciplina) {
-		this.idDisciplina = idDisciplina;
+	public void setDisciplina(Disciplina disciplina) {
+		this.disciplina = disciplina;
 	}
 
 	@Override
 	public String toString() {
-		return "SalaGeral [id=" + id + ", idOficina=" + idOficina + ", idProfessor=" + idProfessor + ", idDisciplina="
-				+ idDisciplina + "]";
+		return "SalaGeral [id=" + id + ", professor=" + professor + ", oficina=" + oficina + ", disciplina="
+				+ disciplina + "]";
 	}
 
 }

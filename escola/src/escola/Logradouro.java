@@ -1,28 +1,38 @@
 package escola;
 
 public class Logradouro {
-	private int id;
+	private Long id;
+	private int cep;
 	private String endereco;
 	private String numero;
 	private String complemento;
 	private String bairro;
 	private Cidade cidade;
 
-	public Logradouro(int id, String endereco, String numero, String bairro, Cidade cidade) {
+	public Logradouro(Long id, int cep, String endereco, String numero, String bairro, Cidade cidade) {
 		super();
 		this.id = id;
+		this.cep = cep;
 		this.endereco = endereco;
 		this.numero = numero;
 		this.bairro = bairro;
 		this.cidade = cidade;
 	}
 
-	public int getId() {
+	public Long getId() {
 		return id;
 	}
 
-	public void setId(int id) {
+	public void setId(Long id) {
 		this.id = id;
+	}
+
+	public int getCep() {
+		return cep;
+	}
+
+	public void setCep(int cep) {
+		this.cep = cep;
 	}
 
 	public String getEndereco() {
@@ -67,8 +77,8 @@ public class Logradouro {
 
 	@Override
 	public String toString() {
-		return "Logradouro [id=" + id + ", endereco=" + endereco + ", numero=" + numero + ", complemento=" + complemento
-				+ ", bairro=" + bairro + ", cidade=" + cidade + "]";
+		return "Logradouro [id=" + id + ", cep=" + cep + ", endereco=" + endereco + ", numero=" + numero
+				+ ", complemento=" + complemento + ", bairro=" + bairro + ", cidade=" + cidade + "]";
 	}
 
 }

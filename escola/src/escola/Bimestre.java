@@ -1,35 +1,27 @@
 package escola;
 
 public class Bimestre {
-	private int id;
-	private Aluno aluno;
+	private Long id;
 	private SalaGeral salaGeral;
+	private Aluno aluno;
 	private double nota;
 	private int falta;
 
-	public Bimestre(int id, Aluno aluno, SalaGeral salaGeral, double nota, int falta) {
+	public Bimestre(Long id, SalaGeral salaGeral, Aluno aluno, double nota, int falta) {
 		super();
 		this.id = id;
-		this.aluno = aluno;
 		this.salaGeral = salaGeral;
+		this.aluno = aluno;
 		this.nota = nota;
 		this.falta = falta;
 	}
 
-	public int getId() {
+	public Long getId() {
 		return id;
 	}
 
-	public void setId(int id) {
+	public void setId(Long id) {
 		this.id = id;
-	}
-
-	public Aluno getAluno() {
-		return aluno;
-	}
-
-	public void setAluno(Aluno aluno) {
-		this.aluno = aluno;
 	}
 
 	public SalaGeral getSalaGeral() {
@@ -38,6 +30,14 @@ public class Bimestre {
 
 	public void setSalaGeral(SalaGeral salaGeral) {
 		this.salaGeral = salaGeral;
+	}
+
+	public Aluno getAluno() {
+		return aluno;
+	}
+
+	public void setAluno(Aluno aluno) {
+		this.aluno = aluno;
 	}
 
 	public double getNota() {
@@ -58,7 +58,7 @@ public class Bimestre {
 
 	@Override
 	public String toString() {
-		return "Bimestre [id=" + id + ", aluno=" + aluno + ", salaGeral=" + salaGeral + ", nota=" + nota + ", falta="
+		return "Bimestre [id=" + id + ", salaGeral=" + salaGeral + ", aluno=" + aluno + ", nota=" + nota + ", falta="
 				+ falta + "]";
 	}
 

@@ -1,12 +1,12 @@
 package escola;
 
 public class Professor {
-	private int id;
+	private Long id;
 	private Pessoa pessoa;
 	private String curriculo;
 	private String disciplinaLeciona;
 
-	public Professor(int id, Pessoa pessoa, String curriculo, String disciplinaLeciona) {
+	public Professor(Long id, Pessoa pessoa, String curriculo, String disciplinaLeciona) {
 		super();
 		this.id = id;
 		this.pessoa = pessoa;
@@ -14,11 +14,11 @@ public class Professor {
 		this.disciplinaLeciona = disciplinaLeciona;
 	}
 
-	public int getId() {
+	public Long getId() {
 		return id;
 	}
 
-	public void setId(int id) {
+	public void setId(Long id) {
 		this.id = id;
 	}
 

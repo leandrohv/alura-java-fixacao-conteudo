@@ -3,34 +3,35 @@ package escola;
 import java.util.Date;
 
 public class Pessoa {
-	private int id;
+	private Long id;
 	private String nome;
+	private Date nascimento;
 	private String rg;
 	private String cpf;
 	private String senha;
 	private String orgaoEmissor;
-	private Date entradaCol;
-	private Date saidaCol;
+	private Date entrada;
+	private Date saida;
 	private Sexo sexo;
 	private Logradouro endereco;
 
-	public Pessoa(int id, String nome, String cpf, String senha, Date entradaCol,
-			Sexo sexo, Logradouro endereco) {
+	public Pessoa(Long id, String nome, Date nascimento, String cpf, String senha, Date entrada, Sexo sexo, Logradouro endereco) {
 		super();
 		this.id = id;
 		this.nome = nome;
+		this.nascimento = nascimento;
 		this.cpf = cpf;
 		this.senha = senha;
-		this.entradaCol = entradaCol;
+		this.entrada = entrada;
 		this.sexo = sexo;
 		this.endereco = endereco;
 	}
 
-	public int getId() {
+	public Long getId() {
 		return id;
 	}
 
-	public void setId(int id) {
+	public void setId(Long id) {
 		this.id = id;
 	}
 
@@ -40,6 +41,14 @@ public class Pessoa {
 
 	public void setNome(String nome) {
 		this.nome = nome;
+	}
+
+	public Date getNascimento() {
+		return nascimento;
+	}
+
+	public void setNascimento(Date nascimento) {
+		this.nascimento = nascimento;
 	}
 
 	public String getRg() {
@@ -66,28 +75,28 @@ public class Pessoa {
 		this.senha = senha;
 	}
 
-	public String getOrgao_emissor() {
+	public String getOrgaoEmissor() {
 		return orgaoEmissor;
 	}
 
-	public void setOrgao_emissor(String orgao_emissor) {
-		this.orgaoEmissor = orgao_emissor;
+	public void setOrgaoEmissor(String orgaoEmissor) {
+		this.orgaoEmissor = orgaoEmissor;
 	}
 
-	public Date getEntradaCol() {
-		return entradaCol;
+	public Date getEntrada() {
+		return entrada;
 	}
 
-	public void setEntradaCol(Date entradaCol) {
-		this.entradaCol = entradaCol;
+	public void setEntrada(Date entrada) {
+		this.entrada = entrada;
 	}
 
-	public Date getSaidaCol() {
-		return saidaCol;
+	public Date getSaida() {
+		return saida;
 	}
 
-	public void setSaidaCol(Date saidaCol) {
-		this.saidaCol = saidaCol;
+	public void setSaida(Date saida) {
+		this.saida = saida;
 	}
 
 	public Sexo getSexo() {
@@ -108,9 +117,9 @@ public class Pessoa {
 
 	@Override
 	public String toString() {
-		return "Pessoa [id=" + id + ", nome=" + nome + ", rg=" + rg + ", cpf=" + cpf + ", senha=" + senha
-				+ ", orgao_emissor=" + orgaoEmissor + ", entradaCol=" + entradaCol + ", saidaCol=" + saidaCol
-				+ ", sexo=" + sexo + ", endereco=" + endereco + "]";
+		return "Pessoa [id=" + id + ", nome=" + nome + ", nascimento=" + nascimento + ", rg=" + rg + ", cpf=" + cpf + ", senha=" + senha
+				+ ", orgaoEmissor=" + orgaoEmissor + ", entrada=" + entrada + ", saida=" + saida + ", sexo=" + sexo
+				+ ", endereco=" + endereco + "]";
 	}
 
 }

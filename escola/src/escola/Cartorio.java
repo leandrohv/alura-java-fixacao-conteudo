@@ -3,29 +3,29 @@ package escola;
 import java.util.Date;
 
 public class Cartorio {
-	private int id;
+	private Long id;
 	private String nome;
 	private String numeroCertidao;
-	private Date dataExpedicaoCertidao;
+	private Date expedicaoCertidao;
 	private int numeroLivro;
 	private int numeroPagina;
 
-	public Cartorio(int id, String nome, String numeroCertidao, Date dataExpedicaoCertidao, int numeroLivro,
+	public Cartorio(Long id, String nome, String numeroCertidao, Date expedicaoCertidao, int numeroLivro,
 			int numeroPagina) {
 		super();
 		this.id = id;
 		this.nome = nome;
 		this.numeroCertidao = numeroCertidao;
-		this.dataExpedicaoCertidao = dataExpedicaoCertidao;
+		this.expedicaoCertidao = expedicaoCertidao;
 		this.numeroLivro = numeroLivro;
 		this.numeroPagina = numeroPagina;
 	}
 
-	public int getId() {
+	public Long getId() {
 		return id;
 	}
 
-	public void setId(int id) {
+	public void setId(Long id) {
 		this.id = id;
 	}
 
@@ -45,12 +45,12 @@ public class Cartorio {
 		this.numeroCertidao = numeroCertidao;
 	}
 
-	public Date getDataExpedicaoCertidao() {
-		return dataExpedicaoCertidao;
+	public Date getExpedicaoCertidao() {
+		return expedicaoCertidao;
 	}
 
-	public void setDataExpedicaoCertidao(Date dataExpedicaoCertidao) {
-		this.dataExpedicaoCertidao = dataExpedicaoCertidao;
+	public void setExpedicaoCertidao(Date expedicaoCertidao) {
+		this.expedicaoCertidao = expedicaoCertidao;
 	}
 
 	public int getNumeroLivro() {
@@ -72,7 +72,7 @@ public class Cartorio {
 	@Override
 	public String toString() {
 		return "Cartorio [id=" + id + ", nome=" + nome + ", numeroCertidao=" + numeroCertidao
-				+ ", dataExpedicaoCertidao=" + dataExpedicaoCertidao + ", numeroLivro=" + numeroLivro
+				+ ", expedicaoCertidao=" + expedicaoCertidao + ", numeroLivro=" + numeroLivro
 				+ ", numeroPagina=" + numeroPagina + "]";
 	}
 

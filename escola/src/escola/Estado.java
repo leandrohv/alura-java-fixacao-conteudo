@@ -1,12 +1,12 @@
 package escola;
 
 public class Estado {
-	private int id;
+	private Long id;
 	private String nome;
 	private String sigla;
 	private Pais pais;
 
-	public Estado(int id, String nome, String sigla, Pais pais) {
+	public Estado(Long id, String nome, String sigla, Pais pais) {
 		super();
 		this.id = id;
 		this.nome = nome;
@@ -14,11 +14,11 @@ public class Estado {
 		this.pais = pais;
 	}
 
-	public int getId() {
+	public Long getId() {
 		return id;
 	}
 
-	public void setId(int id) {
+	public void setId(Long id) {
 		this.id = id;
 	}
 

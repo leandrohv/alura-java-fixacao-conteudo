@@ -1,22 +1,22 @@
 package escola;
 
 public class Pais {
-	private int id;
+	private Long id;
 	private String nome;
 	private String sigla;
 
-	public Pais(int id, String nome, String sigla) {
+	public Pais(Long id, String nome, String sigla) {
 		super();
 		this.id = id;
 		this.nome = nome;
 		this.sigla = sigla;
 	}
 
-	public int getId() {
+	public Long getId() {
 		return id;
 	}
 
-	public void setId(int id) {
+	public void setId(Long id) {
 		this.id = id;
 	}
 

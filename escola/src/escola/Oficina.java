@@ -1,12 +1,12 @@
 package escola;
 
 public class Oficina {
-	private int id;
+	private Long id;
 	private String nome;
 	private int ano;
 	private String nivelRestricao;
 
-	public Oficina(int id, String nome, int ano, String nivelRestricao) {
+	public Oficina(Long id, String nome, int ano, String nivelRestricao) {
 		super();
 		this.id = id;
 		this.nome = nome;
@@ -14,11 +14,11 @@ public class Oficina {
 		this.nivelRestricao = nivelRestricao;
 	}
 
-	public int getId() {
+	public Long getId() {
 		return this.id;
 	}
 
-	public void setId(int id) {
+	public void setId(Long id) {
 		this.id = id;
 	}
 

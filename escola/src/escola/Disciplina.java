@@ -1,20 +1,20 @@
 package escola;
 
 public class Disciplina {
-	private int id;
+	private Long id;
 	private String nome;
 
-	public Disciplina(int id, String nome) {
+	public Disciplina(Long id, String nome) {
 		super();
 		this.id = id;
 		this.nome = nome;
 	}
 
-	public int getId() {
+	public Long getId() {
 		return this.id;
 	}
 
-	public void setId(int id) {
+	public void setId(Long id) {
 		this.id = id;
 	}
 
