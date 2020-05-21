@@ -34,3 +34,9 @@
 Aplicando os conhecimentos adquiridos nos cursos 1 e 2 da formação Java da Alura
 
 #### Primeiro projeto - Escola
+
+Criado classes Java baseado no modelo er escola.
+
+![Modelo ER](erModels/escola/erEscola.png)
+
+[Projeto Escola](escola/src/escola)
