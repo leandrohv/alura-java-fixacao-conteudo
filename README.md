@@ -1,6 +1,4 @@
-# Cursos Alura
-
-Formação Java e Java EE
+# Formação Java e Java EE
 
 - 1/22 - Java parte 1: Primeiros passos (13, 14, 15 de Maio 2020) 8h :heavy_check_mark:
 - 2/22 - Java parte 2: Introdução à Orientação a Objetos 8h :heavy_check_mark:
@@ -29,10 +27,10 @@ Formação Java e Java EE
 
   Estimada: 320h | Executada: 16h
 
-# Fixando conteúdos Java
+## Fixando conteúdos Java
 
-## Modelando classes
+### Modelando classes
 
 Aplicando os conhecimentos adquiridos nos cursos 1 e 2 da formação Java da Alura
 
-### Primeiro projeto - Escola
+#### Primeiro projeto - Escola
