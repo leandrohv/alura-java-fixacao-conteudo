@@ -13,7 +13,7 @@ public class Cidade {
 	}
 
 	public Long getId() {
-		return id;
+		return this.id;
 	}
 
 	public void setId(Long id) {
@@ -21,7 +21,7 @@ public class Cidade {
 	}
 
 	public String getNome() {
-		return nome;
+		return this.nome;
 	}
 
 	public void setNome(String nome) {
@@ -29,7 +29,7 @@ public class Cidade {
 	}
 
 	public Estado getEstado() {
-		return estado;
+		return this.estado;
 	}
 
 	public void setEstado(Estado estado) {
@@ -38,7 +38,7 @@ public class Cidade {
 
 	@Override
 	public String toString() {
-		return "Cidade [id=" + id + ", nome=" + nome + ", estado=" + estado + "]";
+		return "Cidade [id=" + this.id + ", nome=" + this.nome + ", estado=" + this.estado + "]";
 	}
 
 }

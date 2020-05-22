@@ -71,9 +71,8 @@ public class Cartorio {
 
 	@Override
 	public String toString() {
-		return "Cartorio [id=" + id + ", nome=" + nome + ", numeroCertidao=" + numeroCertidao
-				+ ", expedicaoCertidao=" + expedicaoCertidao + ", numeroLivro=" + numeroLivro
-				+ ", numeroPagina=" + numeroPagina + "]";
+		return "Cartorio [id=" + id + ", nome=" + nome + ", numeroCertidao=" + numeroCertidao + ", expedicaoCertidao="
+				+ expedicaoCertidao + ", numeroLivro=" + numeroLivro + ", numeroPagina=" + numeroPagina + "]";
 	}
 
 }

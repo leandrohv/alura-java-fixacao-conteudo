@@ -1,17 +1,16 @@
 package escola;
 
-public class Oficina {
+public class Turma {
 	private Long id;
 	private String nome;
 	private int ano;
 	private String nivelRestricao;
 
-	public Oficina(Long id, String nome, int ano, String nivelRestricao) {
+	public Turma(Long id, String nome, int ano) {
 		super();
 		this.id = id;
 		this.nome = nome;
 		this.ano = ano;
-		this.nivelRestricao = nivelRestricao;
 	}
 
 	public Long getId() {
@@ -48,7 +47,7 @@ public class Oficina {
 
 	@Override
 	public String toString() {
-		return "Oficina [id=" + id + ", nome=" + nome + ", ano=" + ano + ", nivelRestricao=" + nivelRestricao + "]";
+		return "Turma [id=" + id + ", nome=" + nome + ", ano=" + ano + ", nivelRestricao=" + nivelRestricao + "]";
 	}
 
 }

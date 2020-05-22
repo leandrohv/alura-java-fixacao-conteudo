@@ -10,21 +10,18 @@ public class Pessoa {
 	private String cpf;
 	private String senha;
 	private String orgaoEmissor;
-	private Date entrada;
-	private Date saida;
 	private Sexo sexo;
-	private Logradouro endereco;
+	private Logradouro logradouro;
 
-	public Pessoa(Long id, String nome, Date nascimento, String cpf, String senha, Date entrada, Sexo sexo, Logradouro endereco) {
+	public Pessoa(Long id, String nome, Date nascimento, String cpf, String senha, Sexo sexo, Logradouro logradouro) {
 		super();
 		this.id = id;
 		this.nome = nome;
 		this.nascimento = nascimento;
 		this.cpf = cpf;
 		this.senha = senha;
-		this.entrada = entrada;
 		this.sexo = sexo;
-		this.endereco = endereco;
+		this.logradouro = logradouro;
 	}
 
 	public Long getId() {
@@ -83,22 +80,6 @@ public class Pessoa {
 		this.orgaoEmissor = orgaoEmissor;
 	}
 
-	public Date getEntrada() {
-		return entrada;
-	}
-
-	public void setEntrada(Date entrada) {
-		this.entrada = entrada;
-	}
-
-	public Date getSaida() {
-		return saida;
-	}
-
-	public void setSaida(Date saida) {
-		this.saida = saida;
-	}
-
 	public Sexo getSexo() {
 		return sexo;
 	}
@@ -107,19 +88,19 @@ public class Pessoa {
 		this.sexo = sexo;
 	}
 
-	public Logradouro getEndereco() {
-		return endereco;
+	public Logradouro getLogradouro() {
+		return logradouro;
 	}
 
-	public void setEndereco(Logradouro endereco) {
-		this.endereco = endereco;
+	public void setLogradouro(Logradouro logradouro) {
+		this.logradouro = logradouro;
 	}
 
 	@Override
 	public String toString() {
-		return "Pessoa [id=" + id + ", nome=" + nome + ", nascimento=" + nascimento + ", rg=" + rg + ", cpf=" + cpf + ", senha=" + senha
-				+ ", orgaoEmissor=" + orgaoEmissor + ", entrada=" + entrada + ", saida=" + saida + ", sexo=" + sexo
-				+ ", endereco=" + endereco + "]";
+		return "Pessoa [id=" + id + ", nome=" + nome + ", nascimento=" + nascimento + ", rg=" + rg + ", cpf=" + cpf
+				+ ", senha=" + senha + ", orgaoEmissor=" + orgaoEmissor + ", sexo=" + sexo + ", logradouro="
+				+ logradouro + "]";
 	}
 
 }

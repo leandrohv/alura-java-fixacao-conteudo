@@ -68,7 +68,7 @@ public class Logradouro {
 	}
 
 	public Cidade getCidade() {
-		return cidade;
+		return this.cidade;
 	}
 
 	public void setCidade(Cidade cidade) {
@@ -77,8 +77,9 @@ public class Logradouro {
 
 	@Override
 	public String toString() {
-		return "Logradouro [id=" + id + ", cep=" + cep + ", endereco=" + endereco + ", numero=" + numero
-				+ ", complemento=" + complemento + ", bairro=" + bairro + ", cidade=" + cidade + "]";
+		return "Logradouro [id=" + this.id + ", cep=" + this.cep + ", endereco=" + this.endereco + ", numero="
+				+ this.numero + ", complemento=" + this.complemento + ", bairro=" + this.bairro + ", cidade="
+				+ this.cidade + "]";
 	}
 
 }

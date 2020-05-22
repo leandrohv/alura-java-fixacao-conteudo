@@ -4,14 +4,12 @@ public class Professor {
 	private Long id;
 	private Pessoa pessoa;
 	private String curriculo;
-	private String disciplinaLeciona;
 
-	public Professor(Long id, Pessoa pessoa, String curriculo, String disciplinaLeciona) {
+	public Professor(Long id, Pessoa pessoa, String curriculo) {
 		super();
 		this.id = id;
 		this.pessoa = pessoa;
 		this.curriculo = curriculo;
-		this.disciplinaLeciona = disciplinaLeciona;
 	}
 
 	public Long getId() {
@@ -38,18 +36,9 @@ public class Professor {
 		this.curriculo = curriculo;
 	}
 
-	public String getDisciplinaLeciona() {
-		return disciplinaLeciona;
-	}
-
-	public void setDisciplinaLeciona(String disciplinaLeciona) {
-		this.disciplinaLeciona = disciplinaLeciona;
-	}
-
 	@Override
 	public String toString() {
-		return "Professor [id=" + id + ", pessoa=" + pessoa + ", curriculo=" + curriculo + ", disciplinaLeciona="
-				+ disciplinaLeciona + "]";
+		return "Professor [id=" + id + ", pessoa=" + pessoa + ", curriculo=" + curriculo + "]";
 	}
 
 }

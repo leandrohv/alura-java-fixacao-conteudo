@@ -1,17 +1,19 @@
 package escola;
 
-public class SalaGeral {
+public class Sala {
 	private Long id;
 	private Professor professor;
-	private Oficina oficina;
+	private Turma turma;
 	private Disciplina disciplina;
+	private int vaga;
 
-	public SalaGeral(Long id, Professor professor, Oficina oficina, Disciplina disciplina) {
+	public Sala(Long id, Professor professor, Turma turma, Disciplina disciplina, int vaga) {
 		super();
 		this.id = id;
 		this.professor = professor;
-		this.oficina = oficina;
+		this.turma = turma;
 		this.disciplina = disciplina;
+		this.vaga = vaga;
 	}
 
 	public Long getId() {
@@ -22,12 +24,12 @@ public class SalaGeral {
 		this.id = id;
 	}
 
-	public Oficina getOficina() {
-		return oficina;
+	public Turma getTurma() {
+		return turma;
 	}
 
-	public void setOficina(Oficina oficina) {
-		this.oficina = oficina;
+	public void setTurma(Turma turma) {
+		this.turma = turma;
 	}
 
 	public Professor getProfessor() {
@@ -46,10 +48,18 @@ public class SalaGeral {
 		this.disciplina = disciplina;
 	}
 
+	public int getVaga() {
+		return vaga;
+	}
+
+	public void setVaga(int vaga) {
+		this.vaga = vaga;
+	}
+
 	@Override
 	public String toString() {
-		return "SalaGeral [id=" + id + ", professor=" + professor + ", oficina=" + oficina + ", disciplina="
-				+ disciplina + "]";
+		return "SalaGeral [id=" + id + ", professor=" + professor + ", turma=" + turma + ", disciplina=" + disciplina
+				+ ", vaga=" + vaga + "]";
 	}
 
 }

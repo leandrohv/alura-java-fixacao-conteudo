@@ -15,7 +15,7 @@ public class Estado {
 	}
 
 	public Long getId() {
-		return id;
+		return this.id;
 	}
 
 	public void setId(Long id) {
@@ -23,7 +23,7 @@ public class Estado {
 	}
 
 	public String getNome() {
-		return nome;
+		return this.nome;
 	}
 
 	public void setNome(String nome) {
@@ -31,7 +31,7 @@ public class Estado {
 	}
 
 	public String getSigla() {
-		return sigla;
+		return this.sigla;
 	}
 
 	public void setSigla(String sigla) {
@@ -39,7 +39,7 @@ public class Estado {
 	}
 
 	public Pais getPais() {
-		return pais;
+		return this.pais;
 	}
 
 	public void setPais(Pais pais) {
@@ -48,7 +48,7 @@ public class Estado {
 
 	@Override
 	public String toString() {
-		return "Estado [id=" + id + ", nome=" + nome + ", sigla=" + sigla + ", pais=" + pais + "]";
+		return "Estado [id=" + this.id + ", nome=" + this.nome + ", sigla=" + this.sigla + ", pais=" + this.pais + "]";
 	}
 
 }
